@@ -23,16 +23,19 @@ function viewCart() {
   if (cart.length == 0){
     return 'Your shopping cart is empty.'
   }
+  else if (cart.length == 1) {
+    string = `${string} ${cart[i].itemName} at $${cart[i].itemPrice}.`
+  }
   else {
     for (let i = 0 ; i < cart.length ; i++){
-        if (cart.length == 1|| i<cart.length-1) {
+        if (i < cart.length - 1) {
           string = `${string} ${cart[i].itemName} at $${cart[i].itemPrice}`
         }
         else if (i == cart.length - 2){
           string = `${string} ${cart[i].itemName} at $${cart[i].itemPrice}, and`
         }
         else {
-          string = `${string}.`
+          string = `${string}`
         }
       }
       return `${string}`

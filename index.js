@@ -36,7 +36,7 @@ function viewCart() {
           string = `${string}.`
         }
       }
-      return `${output}`
+      return `${string}`
     }
   }
 function total() {

@@ -31,7 +31,7 @@ function viewCart() {
         if (i < cart.length - 1) {
           string = `${string} ${cart[i].itemName} at $${cart[i].itemPrice}`
         }
-        else if (i == cart.length - 2){
+        else if (i == cart.length - 1){
           string = `${string} ${cart[i].itemName} at $${cart[i].itemPrice}, and`
         }
         else {

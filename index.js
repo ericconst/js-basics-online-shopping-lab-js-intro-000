@@ -25,7 +25,6 @@ function viewCart() {
   }
   else {
     for (let i = 0 ; i < cart.length ; i++){
-      string = `${string} ${cart[i].itemName} at $${cart[i].itemPrice}`
         if (cart.length == 1|| i<cart.length-1) {
           string = `${string} ${cart[i].itemName} at $${cart[i].itemPrice}`
         }

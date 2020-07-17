@@ -25,6 +25,7 @@ function viewCart() {
   }
   else if (cart.length == 1) {
     string = `${string} ${cart[cart.length-1].itemName} at $${cart[cart.length-1].itemPrice}.`
+    return `${string}`
   }
   else {
     for (let i = 0 ; i < cart.length ; i++){

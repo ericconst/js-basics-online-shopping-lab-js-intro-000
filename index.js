@@ -29,13 +29,13 @@ function viewCart() {
   else {
     for (let i = 0 ; i < cart.length ; i++){
         if (i < cart.length - 1) {
-          string = `${string} ${cart[i].itemName} at $${cart[i].itemPrice}`
+          string = `${string} ${cart[i].itemName} at $${cart[i].itemPrice},`
         }
         else if (i == cart.length - 1){
           string = `${string} ${cart[i].itemName} at $${cart[i].itemPrice}, and`
         }
         else {
-          string = `${string}`
+          string = `${string} ${cart[i].itemName} at $${cart[i].itemPrice}.`
         }
       }
       return `${string}`

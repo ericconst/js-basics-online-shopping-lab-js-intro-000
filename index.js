@@ -22,9 +22,9 @@ function viewCart() {
   if (cart.length == 0){
     return 'Your shopping cart is empty.'
   }
-  else {
+  else if (cart.length == 1 || cart.length <= 2) {
     for (let i = 0 ; i < cart.length ; i++){
-      string = `${string} ${cart[i].itemName} at $${cart[i].itemPrice}`
+      string = `${string} ${cart[i].itemName} at $${cart[i].itemPrice}`;
       if (cart.length == 1|| i<cart.length-1) {
         string = string
       }

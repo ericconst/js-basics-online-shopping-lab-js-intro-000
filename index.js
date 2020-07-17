@@ -40,10 +40,10 @@ function total() {
 }
 
 function removeFromCart(item) {
-  var name
+  var name1
   for (let i = 0; i < cart.length; i++ ){
-    name = getCart()[i].itemName;
-    if (item = name) {
+    name1 = `${getCart()[i].name}`;
+    if (item = name1) {
       cart.splice(i, 1);
     }
     else {

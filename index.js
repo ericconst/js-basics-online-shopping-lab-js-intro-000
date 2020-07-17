@@ -27,16 +27,16 @@ function viewCart() {
     for (let i = 0 ; i < cart.length ; i++){
       string = `${string} ${cart[i].itemName} at $${cart[i].itemPrice}`
         if (cart.length == 1|| i<cart.length-1) {
-          output = string
+          string = `${string} ${cart[i].itemName} at $${cart[i].itemPrice}`
         }
         else if (i == cart.length - 2){
-          output = `${string}, and`
+          string = `${string} ${cart[i].itemName} at $${cart[i].itemPrice}, and`
         }
         else {
-          output = `${string}`
+          string = `${string}.`
         }
       }
-      return `${output}.`
+      return `${output}`
     }
   }
 function total() {
